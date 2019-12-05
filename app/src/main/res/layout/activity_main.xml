@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/walmartlogo" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        />
+
+    <TextView
+
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in to your account"
+        android:textSize="35dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email addres(required)"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password(required)"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:text="Forgot password?"
+        android:textSize="20dp"
+        android:autoLink="all"
+        android:clickable="true"
+        android:onClick="getPassword"
+
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"
+        android:background="#2196F3"
+        android:onClick="login"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:layout_marginLeft="20dp"
+        android:textColor="#2196F3"
+        android:onClick="createAccount"
+
+        />
+
+</LinearLayout>
